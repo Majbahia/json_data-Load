@@ -8,9 +8,9 @@ function displayData(data){
     const ul = document.getElementById('displayUser')
     for( const user of data){
         const li = document.createElement('li');
-        li.innerText = (user.name);
+        li.innerText = `Name:${user.name} email: ${user.email}`;
         ul.appendChild(li);
-        console.log(user.name);
+    
     }
     
 
